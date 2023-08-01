@@ -12,8 +12,7 @@ node {
 
         stage('Publish') {
             def RESOURCE_GROUP = 'jenkins' 
-            def FUNC_NAME = 'jenkinsjkapp
-'
+            def FUNC_NAME = 'jenkinsjkapp'
             // login Azure
             withCredentials([usernamePassword(credentialsId: 'git123', passwordVariable: 'Password', usernameVariable: 'Username)]) {
             sh '''
